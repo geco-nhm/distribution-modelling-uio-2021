@@ -1,5 +1,5 @@
 # BIOS 5211/9211
-# Olav Skarpaas & Eva Lieungh, NHM, University of Oslo, Nov 2019
+# Olav Skarpaas & Eva Lieungh, NHM, University of Oslo, Nov 2021
 
 # Lab1: A DM primer & R basics
 ##############################
@@ -13,7 +13,9 @@
 # Download and install R: https://cran.r-project.org/
 # Download and install R studio: https://www.rstudio.com/
 # Create an R project (File menu)
-# Download Lab material (Data and script) and put in your working directory
+# Download Lab material and put in your working directory:
+#   data: https://uio-my.sharepoint.com/:u:/g/personal/oskarpaa_uio_no/EZuM02rDipxAuWaFStbBKI0BQZGkxBbWLRi20XSabejyoA?e=WhKRBM
+#   script: github
 # Download and install packages:
 # install.packages(c("raster", "fields"))
 
@@ -69,10 +71,10 @@ plot(p2,col=tim.colors(64),main="Probability of presence - model 2")
 # Inspect model 2 and compare to model 1
 summary(m2)
 
-# Interpret and discuss the models. The species is Ranunculus glacialis (glacier buttercup, issoleie).
+# Interpret and discuss the models. The species is Picea sitchensis (Sitka spruce, sitkagran).
 # How does the species respond to the predictors?
 # How do model predictions compare to the data?
-# Search for Ranunculus glacialis on gbif.org. How do model predictions compare to all observations in GBIF?
+# Search for Picea sitchensis on gbif.org. How do model predictions compare to all observations in GBIF?
 # Are responses and predictions in accordance with ecological expectations for this species?
 # What could be done to improve the models and predictions?
 
@@ -85,7 +87,7 @@ summary(m2)
 # Look at output in the console window and make sure you understand the effect of each command.
 # Annotating lines with your own comments may be a good idea.
 # Keep an eye on files and objects windows (right) as you go.
-# Find more R basics in this Cheat Sheet: https://rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf 
+# Find more R basics and advanced stuff in RStudio Cheatsheets: https://www.rstudio.com/resources/cheatsheets/
 
 # Command line exercises
 1+1
