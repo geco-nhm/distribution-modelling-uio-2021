@@ -14,7 +14,7 @@
 # Download and install R studio: https://www.rstudio.com/
 # Create an R project (File menu)
 # Download Lab material and put in your working directory:
-#   data: https://uio-my.sharepoint.com/:u:/g/personal/oskarpaa_uio_no/EZuM02rDipxAuWaFStbBKI0BQZGkxBbWLRi20XSabejyoA?e=WhKRBM
+# data: https://uio-my.sharepoint.com/:u:/g/personal/oskarpaa_uio_no/EZuM02rDipxAuWaFStbBKI0BQZGkxBbWLRi20XSabejyoA?e=WhKRBM
 #   script: github
 # Download and install packages:
 # install.packages(c("raster", "fields"))
@@ -28,14 +28,14 @@ library(raster) # for raster data tools
 library(fields) # for tim.colors and other color palettes
 
 # Load training data
-load("Data/DM_primer_training_data")
+load("lab_data/DM_primer_training_data")
 
 # View top and bottom of data
 head(training_data)
 tail(training_data)
 
 # Load predictor variable data
-temp <- raster("Data/DM_primer_predictor_map")
+temp <- raster("lab_data/DM_primer_predictor_map")
 
 # Plot predictor map (temperature)
 plot(temp)
