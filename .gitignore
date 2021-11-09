@@ -3,3 +3,10 @@
 .RData
 .Ruserdata
 *.Rproj
+
+# Exclude rasters
+lab_data/
+*.tif
+
+# But keep...
+!lab_data/.gitkeep
