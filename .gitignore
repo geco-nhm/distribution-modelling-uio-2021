@@ -5,7 +5,6 @@
 *.Rproj
 
 # Exclude rasters
-lab_data/
 *.tif
 
 # But keep...
