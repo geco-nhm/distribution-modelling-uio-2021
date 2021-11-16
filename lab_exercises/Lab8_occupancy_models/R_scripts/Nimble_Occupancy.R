@@ -11,7 +11,7 @@
 #   Modeling distribution, abundance and species richness using R and BUGS
 #   Volume 1: Prelude and Static models
 #
-#   Marc Kéry & J. Andy Royle
+#   Marc KÃ©ry & J. Andy Royle
 #
 #   Created 2 Dec 2015 based on draft from 21 Oct 2015
 #
@@ -363,10 +363,10 @@ xx
 # Need to scale xx the same way we scaled the day data
 xxS <- standardize2match(xx, day)
 
-# Do a plot with credible interval
-a0 <- fm3$a0 #get mcmc chains for each parameter
-aDay <- fm3$aDay
-aDay2 <- fm3$aDay2
+# Do a plot with credible interval (here we will only use the first chain for simplicity)
+a0 <- fm3$chain1[,'a0'] #get mcmc chains for each parameter
+aDay <- fm3$chain1[,'aDay']
+aDay2 <- fm3$chain1[,'aDay2']
 
 #now generate data using the model equation and each sample from the mcmc
 toplot <- matrix(NA, length(xx), 3)
@@ -383,8 +383,8 @@ polygon(x=c(xx, rev(xx)), y=c(toplot[, 2], rev(toplot[, 3])),
         col=adjustcolor('skyblue', 0.5), border=NA)
 lines(xx, toplot[, 1], lwd=2, col='blue')
 # Add intercept
-abline(h=mean(fm3$p0))
-abline(h=hdi(fm3$p0), lty=2)
+abline(h=mean(fm3$chain1[,'p0']))
+abline(h=hdi(fm3$chain1[,'p0']), lty=2)
 
 #Note that p is estimated the best in the middle of the season
 hist(day)
