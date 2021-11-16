@@ -1,3 +1,6 @@
+########################
+#  WINDOWS USERS
+########################
 #Install Rtools
    ##YOU MAY NEED ADMINISTRATOR RIGHTS TO DO THIS
 #use this link:  
@@ -10,6 +13,16 @@ write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append 
 Sys.which("make")
 #should get something like this:
 ## "C:\\rtools40\\usr\\bin\\make.exe"
+
+###########################
+# Mac and Linux users
+###########################
+#follow instructions here
+# https://github.com/geco-nhm/distribution-modelling-uio-2021/blob/main/lab_exercises/Lab8_occupancy_models/R_scripts/Nimble_Occupancy.R
+
+###########################
+# Everyone
+###########################
 
 #now install any packages from below that you don't already have
 #try to load them with the code below, then install any that are missing and reload them
