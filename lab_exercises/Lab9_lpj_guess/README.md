@@ -13,3 +13,9 @@ OS at your disposal, we will pair you up with someone who does during the lab to
 The interactive exercise materials and instructions can be found here: 
 [click me](https://hackmd.io/@pYjjfkwmSfW932OvIjzLHA/By6p2FT4Y/edit)! Please add potential questions and feedback there so 
 that we can use your input to improve the materials!
+
+---
+
+## Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
+
+If you finish the exercise early and feel motivated to run a different DGVM, please follow [this link](https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates/tutorial.html). The tutorial will introduce you to running the FATES model (see lecture) with the help of a GUI and the computational resources provided by the GALAXY project ([see wikipedia](https://en.wikipedia.org/wiki/Galaxy_(computational_biology)). You can access the resources here: [](https://climate.usegalaxy.eu/) - note that you will need to register a user account.
